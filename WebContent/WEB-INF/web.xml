@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- encoding="UTF-8"= 한글처리
+			web-app = root 태그  또는 root Element => 1개만 가능함. xml태그는 지정이 되어있음  web-app은 하나여야하고 
+			수정하라고 할때 </welcom>밖에 수정.
+			xmlns ....-> default 네임스페이스  
+			xml = 대소문자구별.-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>jspstudy1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ <!--  error 페이지 설정 
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/chap9/error404.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>500</exception-type>
+  	<location>/chap9/error500.jsp</location>
+  </error-page>
+    <error-page>
+    <exception-type>java.lang.NumberFormatException</exception-type>
+  	<location>/chap9/errorNumberFormat.jsp</location>
+  </error-page> 
+ -->
+</web-app>
